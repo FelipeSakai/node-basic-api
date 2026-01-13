@@ -11,7 +11,7 @@ afterAll(async () => {
 })
 
 
-test('Criar uma nova transação', async () => {
+test('user can create a new transaction', async () => {
     await request(app.server)
         .post('/transactions')
         .send({
