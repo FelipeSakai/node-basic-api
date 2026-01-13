@@ -1,5 +1,4 @@
-import knex from 'knex'
-import type { Knex } from 'knex'
+import knex, { type Knex } from 'knex'
 import { env } from './env/index.js'
 
 
@@ -15,6 +14,4 @@ export const config: Knex.Config = {
     },
 }
 
-export const knexInstance = knex(config)
-
-export { knex }
+export const db = knex(config)
